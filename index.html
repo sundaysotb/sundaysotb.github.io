@@ -11,21 +11,21 @@
 	</div>
 	
 	<div id="Crepes" class="tabcontent">
-		<div style="margin-left:5px;">
+		<div style="margin-left:5px;" id="Sandwiches-Content">
 		  <h3>London</h3>
 		  <p>London is the capital city of England.</p>
 		</div>
 	</div>
 	
 	<div id="Salads" class="tabcontent">
-		<div style="margin-left:5px;">
+		<div style="margin-left:5px;" id="Sandwiches-Content">
 		  <h3>London</h3>
 		  <p>London is the capital city of England.</p>
 		</div>
 	</div>
 	
 	<div id="Sandwiches" class="tabcontent">
-		<div style="margin-left:5px;">
+		<div style="margin-left:5px;" id="Sandwiches-Content">
 		  <h3>London</h3>
 		  <p>London is the capital city of England.</p>
 		</div>
@@ -71,13 +71,23 @@
 
 <script>
 	loadJSON(function(json) {
-	  console.log(json); // this will log out the json object
+		console.log(json);
+		var jsonObject = JSON.parse(json);
+		
+		
+		var text = "";
+		for(i in jsonObject.Crepes)
+		{
+			text += i.Name + " - " + i.Price + "<br>";
+		}
+		document.getElementById("Crepes-Content").innerHTML = text;
+		
 	});
 
 	function loadJSON(callback) {   
 	  var xobj = new XMLHttpRequest();
 	  xobj.overrideMimeType("application/json");
-	  xobj.open('GET', 'Data.json', true);
+	  xobj.open('GET', '../Data.json', true);
 	  xobj.onreadystatechange = function () {
 		if (xobj.readyState == 4 && xobj.status == "200") {
 		  callback(JSON.parse(xobj.responseText));
