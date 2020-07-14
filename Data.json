@@ -1,0 +1,182 @@
+{
+  "Salads": [
+    {
+      "Name": "OTB Salad",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Caesar Salad",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Caesar Salad (Chix)",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Caesar Salad (Shrimp)",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Antipasto Salad",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Cobb Salad",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Athens Salad",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Granada Salad",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Valencia Salad",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Chicken Salad (Spring)",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Tuna Salad",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Seafood Salad",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Egg Salad",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Chicken Pesto (Salad)",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Chicken & Steak Combo (Spinach)",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Chicken & Shrimp Combo (Romaine)",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Steak & Shrimp (Spring)",
+      "Price": "14.99"
+    }
+  ],
+  "Crepes": [
+    {
+      "Name": "Seafood Combination",
+      "Price": "15.99"
+    },
+    {
+      "Price": "13.99",
+      "Name": "Chicken Divan"
+    },
+    {
+      "Name": "Croque Monsieur",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Wild Pacific Salmon",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Chorizo & Potatoes",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Grilled Steak & Peppers",
+      "Price": "14.99"
+    },
+    {
+      "Name": "Veggie",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Homeboy Crepe",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Homegirl Crepe",
+      "Price": "13.99"
+    },
+    {
+      "Name": "South Beach Crepe",
+      "Price": "13.99"
+    },
+    {
+      "Name": "French Bourgeois Crepe",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Russian Bourgeois Crepe",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Italian Bourgeois Crepe",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Spanish Bourgeois Crepe",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Berry Good",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Tout De Suite",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Romeo & Juliet",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Funky Monkey",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Napoleon",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Chocolatier",
+      "Price": "12.99"
+    },
+    {
+      "Name": "The Godfather",
+      "Price": "12.99"
+    },
+    {
+      "Name": "The Sweetheart",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Crepe Dimanche",
+      "Price": "10.99"
+    },
+    {
+      "Name": "French Apple",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Strawberry Dynamite",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Crepe Suzzette",
+      "Price": "11.99"
+    },
+    {
+      "Name": "A La Mode",
+      "Price": "2.00"
+    }
+  ]
+}
