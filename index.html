@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<script type="text/javascript" src="currency.js"></script>
 </head>
-<body style="width: 100vw; display: flex;">
+<body>
 	<div class="item-selection" style="width:50vw">
 		<div class="tab">
-		  <button class="tablinks active" onclick="openTab(event, 'Crepes')">Crepes</button>
-		  <button class="tablinks" onclick="openTab(event, 'Salads')">Salads</button>
-		  <button class="tablinks" onclick="openTab(event, 'Sandwiches')">Sandwiches</button>
+			<button class="tablinks active" onclick="openTab(event, 'Crepes')">Crepes</button>
+			<button class="tablinks" onclick="openTab(event, 'Salads')">Salads</button>
+			<button class="tablinks" onclick="openTab(event, 'Sandwiches')">Sandwiches</button>
+			<button class="tablinks" onclick="openTab(event, 'Pasta')">Pasta</button>
 		</div>
 		
 		<div id="Crepes" style="display: block;" class="tabcontent">
@@ -18,67 +20,79 @@
 		</div>
 		
 		<div id="Salads" class="tabcontent">
-			<div style="margin-left:5px;" id="Salads-Content">
-				Section Under Construction
+			<div class="buttonArea" id="Salads-Content">
+			
 			</div>
 		</div>
 		
 		<div id="Sandwiches" class="tabcontent">
-			<div style="margin-left:5px;" id="Sandwiches-Content">
+			<div class="buttonArea" id="Sandwiches-Content">
 				Section Under Construction
+			</div>
+		</div>
+		
+		<div id="Pasta" class="tabcontent">
+			<div class="buttonArea" id="Pasta-Content">
+				
 			</div>
 		</div>
 	</div>
 	<div class="payment-calculator">
 		<div class="check-controls">
+			<button class="check-control-button" onclick="addMisc()">Add Misc.</button>
+			<button class="check-control-button" onclick="clearCheck()">Clear</button>
+		</div>
+		<div id="item-list" class="item-list">
 		
 		</div>
-		<div id="item-list" class="item-list" style="overflow-y: scroll;">
-			<div id="remove-buttons" style="width: 10%">
-				
-			</div>
-			<div id="item-list-name" style="width: 90%; margin-left: 5px;">
-				
-			</div>
-			<div id="item-list-price" style="text-align: right; margin-right: 2px;">
-				
-			</div>
-		</div>
 		<div id="totals" class="totals">
-				<div id="subtotal" class="total-part">
-					Subtotal: $0.00
-				</div>
-				<div id="taxes" class="total-part">
-					Taxes: $0.00
-				</div>
-				<div id="total" class="total-part">
-					Total: $0.00
-				</div>
+			<div id="subtotal" class="total-part">
+				Subtotal: $0.00
+			</div>
+			<div id="taxes" class="total-part">
+				Taxes: $0.00
+			</div>
+			<div id="total" class="total-part">
+				Total: $0.00
+			</div>
 		</div>
 	</div>
+
 </body>
 </html>
 
-<style>
+<style>	
 html, body {
   background-color: #ccc;
+  touch-action: none;
 }
 
-html, body :: after
-{
-  height: 100vh;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+* {
+  font-size: 1.5vmin;
 }
 
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+}
+
+button {
+  touch-action: manipulation;
 }
 
 .tab {
-  height: 10%;
+  height: 20%;
   width: 100%;
-  overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
@@ -90,9 +104,9 @@ html, body :: after
   outline: none;
   cursor: pointer;
   height: 100%;
-  width: 25%;
+  width: 20%;
   transition: 0.3s;
-  font-size: 17px;
+  font-weight: bold;
 }
 
 .tab button:hover {
@@ -105,7 +119,7 @@ html, body :: after
 
 .tabcontent {
   width: 100%;
-  height: 90%;
+  height: 80%;
   display: none;
   border: 1px solid #ccc;
   border-top: none;
@@ -113,32 +127,32 @@ html, body :: after
 }
 
 .item-button {
-	border: 1px solid;
-	background-color: red;
+  border: 1px solid;
+  background-color: red;
 }
 
 .buttonArea {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
   padding-left: 2px;
   padding-right: 2px;
   grid-gap: 0px;
  }
  
 .payment-calculator {
-  position: relative;
-  overflow: hidden;
   width: 50vw;
-  height: 80vh;
+  height: 100%;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   background-color: white;
+  overflow: hidden;
 }
 
 .item-list {
-  height: 80%;
-  display: flex;
+  touch-action: manipulation;
+  height: 85%;
+  overflow-y: scroll;
 }
 
 .check-controls {
@@ -149,14 +163,13 @@ html, body :: after
 }
 
 .item-selection {
-   height: 80vh;
+   height: 100%;
 }
 
 .totals {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  padding: 2px;
+  height: 5%;
+  padding-top: 2px;
   display: flex;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
@@ -173,24 +186,68 @@ html, body :: after
 }
 
 .removeButton {
-  margin-top: 2px;
   border: none;
   border-radius: 5%;
-  height: 5%;
-  width: 100%;
-  background-color: red;
+  width: 25px;
+  background-color: red;  
+  height: 20px;
+  margin-top: 2.5px; 
+  margin-left: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.item-entry-parent {
+  display: flex;
+  margin-top: 2px;
+  padding: 0px;
+  padding-right: 5ch;
+  height: 25px;
+}
+
+.remove-button-parent {
+  width: 35px;
+  margin-right: 5px;
 }
 
 .item-entry-name {
-  margin-top: 2px;
-	text-align: center;
-	height: 5%;
-	text-align: left;
+  padding-top: 2px;
+  text-align: left;
+  height: 25px;
+  width: 100%;
+}
+
+.check-control-button {
+  width: 25%;
+  height: 100%;
+  border-style: solid;
+  border-radius: 1%;
+  border-color: #6aab6e;
+  background-color: #6ac470;
 }
 
 .item-entry-price {
-  margin-top: 2px;
-	height: 5%;
+  right: 5ch;
+  height: 25px;
+  text-align: left;
+  margin-top: 2.5px;
+  height: 25px;
+}
+
+.misc-name-input {
+  width: 20ch;
+  height: 15px;
+  margin-top: 2.5px;  
+  border: 1px solid black;
+  margin-left: 2px;
+}
+
+.misc-price-input {
+  width: 8ch;
+  border: 1px solid black;
+  height: 15px;
+  margin-top: 2.5px;
+  text-align: center;
 }
 </style>
 
@@ -205,23 +262,44 @@ html, body :: after
 		jsonData = JSON.parse(JSON.stringify(json));
 		
 		var colors = ['#447bd4', '#3a63a6', '#4eb3cc', '#3a8a9e', '#48bd5f', '#358c46'];
+		var colors1 = ['#3E92CC', '#2A628F', '#16324F', '#13293D', '#18435A', '#113142'];
 		
 		// This is a terrible way to do this haha (Too much repetition)
 		var text = "";
 		for(i in jsonData.Crepes)
 		{
-			text += "<button id=\"" + jsonData.Crepes[i].Name + "-" + jsonData.Crepes[i].Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
-				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + jsonData.Crepes[i].Name + " - $" + jsonData.Crepes[i].Price + "</button>";
+			var item = jsonData.Crepes[i];
+			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
+				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
 		}
 		document.getElementById("Crepes-Content").innerHTML = text;
 		
-		/*for(i in jsonData.Salads)
+		text = "";
+		for(i in jsonData.Salads)
 		{
-			console.log(i);
-			text += jsonData.Crepes[i].Name + " - " + jsonObject.Crepes[i].Price + "<br>";
+			var item = jsonData.Salads[i];
+			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
+				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
 		}
 		document.getElementById("Salads-Content").innerHTML = text;
-		*/
+		
+		text = "";
+		for(i in jsonData.Sandwiches)
+		{
+			var item = jsonData.Sandwiches[i];
+			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
+				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
+		}
+		document.getElementById("Sandwiches-Content").innerHTML = text;
+		
+		text = "";
+		for(i in jsonData.Pasta)
+		{
+			var item = jsonData.Pasta[i];
+			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
+				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
+		}
+		document.getElementById("Pasta-Content").innerHTML = text;
 		
 		subtotal = currency("0");
 		// console.log(subtotal);
@@ -230,13 +308,56 @@ html, body :: after
 	function addItem(buttonId)
 	{
 		var split = buttonId.split("-");
-		document.getElementById("item-list-name").innerHTML += "<div class=\"item-entry-name\" id=\"" + currId + "-Name\">" + split[0] + "</div>";
-		document.getElementById("item-list-price").innerHTML += "<div class=\"item-entry-name\" id=\"" + currId + "-Price\">$" + split[1] + "</div>";
-		document.getElementById("remove-buttons").innerHTML += "<button class=\"removeButton\" id=\"" + currId + "-Button-" + split[1] + "\"" + "onClick=\"removeItem(this.id)\">X</button>";
 		
+		var container = document.getElementById("item-list");
+		var entry = document.createElement('div');
+		entry.id = currId;
+		entry.innerHTML = "<div class=\"item-entry-parent\" style=\"background-color:#ffc4c4;\">" 
+		+ "<div class=\"remove-button-parent\"><button class=\"removeButton\" id=\"" + currId + "-Button-" + split[1] + "\"" + "onClick=\"removeItem(this.id)\">X</button></div>"
+		+ "<div class=\"item-entry-name\" id=\"" + currId + "-Name\">" + split[0] + "</div>"
+		+ "<div style=\"position: relative;\"><div class=\"item-entry-price\" id=\"" + currId + "-Price\">$" + split[1] + "</div></div>"
+		+ "</div>";
+		container.appendChild(entry);
 		subtotal = subtotal.add(split[1]);
 		
 		updateTotals();
+		
+		currId++;
+	}
+	
+	function clearCheck()
+	{
+		document.getElementById("item-list").innerHTML = "";
+		subtotal = currency("0");
+		updateTotals();
+	}
+		
+	function addMisc()
+	{
+		var container = document.getElementById("item-list");
+		var entry = document.createElement('div');
+		entry.id = currId;
+		entry.className = "item-entry-parent";
+		entry.style.backgroundColor = "#ffc4c4";
+		
+		var button = document.createElement('div');
+		button.innerHTML = "<div class=\"remove-button-parent\"><button class=\"removeButton\" id=\"" + currId + "-Button-" + "M" + "\"" + "onClick=\"removeItem(this.id)\">X</button></div>"
+		
+		entry.appendChild(button);
+		
+		var name = document.createElement('name');
+		name.style.width = "100%";
+		name.innerHTML = "<input class=\"misc-name-input\"/>";
+		
+		entry.appendChild(name);
+		
+		var price = document.createElement('price');
+		price.innerHTML = "<input class=\"misc-price-input\" min=\"0\" inputmode=\"numeric\" type=\"number\" pattern\"[0-9]*\" oninput=\"\" onchange=\"\"/>";
+		price.addEventListener('input', onChangeMisc);
+		
+		entry.appendChild(price);
+		
+		container.appendChild(entry);
 		
 		currId++;
 	}
@@ -248,15 +369,25 @@ html, body :: after
 		document.getElementById("total").innerHTML = " <b>Total: $" + subtotal.add(subtotal.multiply(.1025)) + "</b>";
 	}
 	
+	function onChangeMisc(element)
+	{
+		if(element.target.oldvalue != undefined)
+		{
+			subtotal = subtotal.subtract(element.target.oldvalue);
+		}
+		
+		element.target.oldvalue = element.target.value;
+		subtotal = subtotal.add(element.target.value);
+		
+		updateTotals();
+	}
+	
 	function removeItem(buttonId)
 	{
 		var id = buttonId.split("-")[0];
-		var price = document.getElementById(id + "-Price");
-		price.parentNode.removeChild(price);
-		var name = document.getElementById(id + "-Name");
-		name.parentNode.removeChild(name);
 		var button = document.getElementById(buttonId);
-		button.parentNode.removeChild(button);
+		var entry = document.getElementById(id);
+		entry.parentNode.removeChild(entry);
 		
 		subtotal = subtotal.subtract(buttonId.split("-")[2]);
 		
