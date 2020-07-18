@@ -69,6 +69,132 @@
       "Price": "14.99"
     }
   ],
+  "Sandwiches": [
+	{
+      "Name": "Chicken Roma",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Chicken Pesto",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Turkey & Swiss",
+      "Price": "9.99"
+    },
+    {
+      "Name": "RB & Cheddar",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Pepperoni",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Naples",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Caprese",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Smoked Three Cheese",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Tuna & Asiago",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Croque Monsieur",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Croque Madame",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Meatball Sandwich",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Italian Suasage Sandwich",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Pizza Sandwich",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Chicken Marinara",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Pastrami & Swiss",
+      "Price": "11.99"
+    },
+    {
+      "Name": "RB & Bleu",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Tri-Tip Steak",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Turkey | RB | Ham Sub",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Italian | Club | Tuna Sub",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Antipasto",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Classic Chicken Salad",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Seafood Club",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Turkey & Swiss",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Toasted BLT",
+      "Price": "8.99"
+    },
+    {
+      "Name": "BLT W/ Avocado",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Egg Salad Sandwich",
+      "Price": "8.99"
+    },
+    {
+      "Name": "OMG Chicken Salad",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Bang Bang",
+      "Price": "11.99"
+    },
+    {
+      "Name": "The Best",
+      "Price": "12.99"
+    },
+    {
+      "Name": "The Five Star",
+      "Price": "12.99"
+    }
+  ],
   "Crepes": [
     {
       "Name": "Seafood Combination",
@@ -177,6 +303,48 @@
     {
       "Name": "A La Mode",
       "Price": "2.00"
+    }
+  ],
+	"Pasta": [
+    {
+      "Name": "Macaroni & Cheese",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Veggie Mac & Cheese",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Pesto Mac & Cheese",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Spaghetti",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Fettuccini Alfredo",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Fettuccini Alfredo (Chix + Broc)",
+      "Price": "20.99"
+    },
+    {
+      "Name": "Fettuccini Alfredo (Ham + Mushroom)",
+      "Price": "20.99"
+    },
+    {
+      "Name": "Veggie Primavera",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Baked Ziti",
+      "Price": "16.99"
+    },
+    {
+      "Name": "Shrimp Scampi",
+      "Price": "19.99"
     }
   ]
 }
