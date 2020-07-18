@@ -5,62 +5,61 @@
 	<script type="text/javascript" src="currency.js"></script>
 </head>
 <body>
-	<div class="item-selection" style="width:50vw">
-		<div class="tab">
-			<button class="tablinks active" onclick="openTab(event, 'Crepes')">Crepes</button>
-			<button class="tablinks" onclick="openTab(event, 'Salads')">Salads</button>
-			<button class="tablinks" onclick="openTab(event, 'Sandwiches')">Sandwiches</button>
-			<button class="tablinks" onclick="openTab(event, 'Pasta')">Pasta</button>
-		</div>
-		
-		<div id="Crepes" style="display: block;" class="tabcontent">
-			<div class="buttonArea" id="Crepes-Content">
-				
+	<div id="confirmation-dialog">
+		<div class="dialog-container">
+			<div style="display: flex; height: 50%;">
+				<div class="dialog-text">
+					Are you sure you would like to clear this check?
+				</div>
+				<div class="close-dialog" onclick="cancelClear()">X</div>
+			</div>
+			<div class="dialog-button-container" style="display: flex; height: 50%;">
+				<button class="dialog-button-cancel" onclick="cancelClear()">Cancel</button>
+				<button class="dialog-button-delete" onclick="clearCheck()">Delete Check</button>
 			</div>
 		</div>
-		
-		<div id="Salads" class="tabcontent">
-			<div class="buttonArea" id="Salads-Content">
+	</div>
+	<div id="all-content-container">
+		<div id="leftContentArea" class="item-selection" style="width:70vw">
+			<div class="tab">
+				<button id="defaultTab" class="tablinks" onclick="openTab(event, 'Breakfast')">Breakfast</button>
+				<button class="tablinks" onclick="openTab(event, 'Crepes')">Crepes</button>
+				<button class="tablinks" onclick="openTab(event, 'Salads')">Salads</button>
+				<button class="tablinks" onclick="openTab(event, 'Sandwiches')">Sandwiches</button>
+				<button class="tablinks" onclick="openTab(event, 'Pasta')">Pasta</button>
+				<button class="tablinks" onclick="openTab(event, 'Omelettes')">Omelettes</button>
+				<button class="tablinks" onclick="openTab(event, 'Kids Menu')">Kids Menu</button>
+				<button class="tablinks" onclick="openTab(event, 'Pizzas')">Pizzas</button>
+				<button class="tablinks" onclick="openTab(event, 'Drinks')">Drinks</button>
+				<button class="tablinks" onclick="openTab(event, 'Smoothies')">Smoothies</button>
+				<button class="tablinks" onclick="openTab(event, 'Sides')">Sides</button>
+			</div>
+		</div>
+		<div class="payment-calculator">
+			<div class="check-controls">
+				<button class="check-control-button" onclick="addMisc()">Add Misc.</button>
+				<button class="check-control-button" onclick="">---</button>
+				<button class="check-control-button" onclick="">---</button>
+				<button class="check-control-button" onclick="clearCheckDialog()">Clear</button>
+			</div>
+			<div id="item-list" class="item-list">
 			
 			</div>
-		</div>
-		
-		<div id="Sandwiches" class="tabcontent">
-			<div class="buttonArea" id="Sandwiches-Content">
-				Section Under Construction
-			</div>
-		</div>
-		
-		<div id="Pasta" class="tabcontent">
-			<div class="buttonArea" id="Pasta-Content">
-				
-			</div>
-		</div>
-	</div>
-	<div class="payment-calculator">
-		<div class="check-controls">
-			<button class="check-control-button" onclick="addMisc()">Add Misc.</button>
-			<button class="check-control-button" onclick="clearCheck()">Clear</button>
-		</div>
-		<div id="item-list" class="item-list">
-		
-		</div>
-		<div id="totals" class="totals">
-			<div id="subtotal" class="total-part">
-				Subtotal: $0.00
-			</div>
-			<div id="taxes" class="total-part">
-				Taxes: $0.00
-			</div>
-			<div id="total" class="total-part">
-				Total: $0.00
+			<div id="totals" class="totals">
+				<div id="subtotal" class="total-part">
+					Subtotal: $0.00
+				</div>
+				<div id="taxes" class="total-part">
+					Taxes: $0.00
+				</div>
+				<div id="total" class="total-part">
+					Total: $0.00
+				</div>
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
-
 <style>	
 html, body {
   background-color: #ccc;
@@ -71,10 +70,52 @@ html {
   height: 100%;
 }
 
+* {
+  font-family: sans-serif;
+}
+
 body {
   height: 100%;
   display: flex;
   overflow: hidden;
+}
+
+.close-dialog {
+  color: #aaaaaa;
+  margin-top: 0px;
+  margin-right: 5px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.close-dialog:hover,
+.close-dialog:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dialog-button-container button {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 2em;
+}
+
+.dialog-button-cancel {
+  border: 1px solid black;
+}
+
+.dialog-button-delete { 
+  color: white;
+  background-color: #f44336;
+  border: 1px solid red;
+}
+
+.dialog-text {
+  width: 100%;
+  font-size: 4em;
+  margin-left: 5px;
 }
 
 * {
@@ -84,6 +125,41 @@ body {
 *, *::before, *::after {
   margin: 0;
   padding: 0;
+}
+
+#all-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#confirmation-dialog {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.dialog-container {
+  width: 80%;
+  height: 25%;
+  background-color: white;
+  position: absolute; /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 button {
@@ -99,12 +175,11 @@ button {
 
 .tab button {
   background-color: inherit;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  height: 100%;
-  width: 20%;
+  height: 50%;
+  width: 16%;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -127,6 +202,8 @@ button {
 }
 
 .item-button {
+  font-weight: bold;
+  color: black;
   border: 1px solid;
   background-color: red;
 }
@@ -218,7 +295,7 @@ button {
 }
 
 .check-control-button {
-  width: 25%;
+  width: 24%;
   height: 100%;
   border-style: solid;
   border-radius: 1%;
@@ -255,55 +332,58 @@ button {
 	var jsonData;
 	var subtotal;
 	var currId;
-
 	loadJSON(function(json) {
 		currId = 0;
-		console.log(json);
 		jsonData = JSON.parse(JSON.stringify(json));
+		// , '#a5b3e8', '#6c7287', '#acd6a9', '#95a894'
+		var colorPalettes = [['#72a6b3', '#5f777d', '#97ccaf', '#6f8c7c']];
 		
-		var colors = ['#447bd4', '#3a63a6', '#4eb3cc', '#3a8a9e', '#48bd5f', '#358c46'];
-		var colors1 = ['#3E92CC', '#2A628F', '#16324F', '#13293D', '#18435A', '#113142'];
+		var leftContentArea = document.getElementById("leftContentArea");
 		
-		// This is a terrible way to do this haha (Too much repetition)
-		var text = "";
-		for(i in jsonData.Crepes)
+		var categoryNum = 0;
+		for(category in jsonData)
 		{
-			var item = jsonData.Crepes[i];
-			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
-				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
+			var colors = colorPalettes[categoryNum % colorPalettes.length];
+			var text =  "";
+			for(itemNum in jsonData[category])
+			{
+				var item = jsonData[category][itemNum];
+				text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * parseInt(itemNum)) % colors.length]
+				+ "; border-color:" + colors[(1 + 2 * parseInt(itemNum)) % colors.length] +  ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
+			}
+			
+			var categoryChild = document.createElement('div');
+			categoryChild.id = category;
+			categoryChild.style.display = "block";
+			categoryChild.className = "tabcontent";
+			
+			var buttonArea = document.createElement('div');
+			buttonArea.className = "buttonArea";
+			buttonArea.id = category + "-Content";
+			buttonArea.innerHTML = text;
+			
+			categoryChild.appendChild(buttonArea);
+			leftContentArea.appendChild(categoryChild);
+			categoryNum++;
 		}
-		document.getElementById("Crepes-Content").innerHTML = text;
-		
-		text = "";
-		for(i in jsonData.Salads)
-		{
-			var item = jsonData.Salads[i];
-			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
-				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
-		}
-		document.getElementById("Salads-Content").innerHTML = text;
-		
-		text = "";
-		for(i in jsonData.Sandwiches)
-		{
-			var item = jsonData.Sandwiches[i];
-			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
-				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
-		}
-		document.getElementById("Sandwiches-Content").innerHTML = text;
-		
-		text = "";
-		for(i in jsonData.Pasta)
-		{
-			var item = jsonData.Pasta[i];
-			text += "<button id=\"" + item.Name + "-" + item.Price + "\"" + "class=\"item-button\"" + " style=\"background-color: " + colors[(2 * i) % colors.length]
-				+ "; border-color: " + colors[(2 * i + 1) % colors.length] + ";\"" + "onClick=\"addItem(this.id)\">" + item.Name + " - $" + item.Price + "</button>";
-		}
-		document.getElementById("Pasta-Content").innerHTML = text;
 		
 		subtotal = currency("0");
-		// console.log(subtotal);
+		
+		openTab(null, 'Breakfast');
+		document.getElementById('defaultTab').className += " active";
 	});
+	
+	function cancelClear()
+	{
+		document.getElementById("all-content-container").style.display = "block;";
+		document.getElementById("confirmation-dialog").style.display = "none";
+	}
+	
+	function clearCheckDialog()
+	{
+		document.getElementById("all-content-container").style.display = "none;";
+		document.getElementById("confirmation-dialog").style.display = "block";
+	}
 	
 	function addItem(buttonId)
 	{
@@ -327,6 +407,7 @@ button {
 	
 	function clearCheck()
 	{
+		cancelClear(); // Close clear dialog
 		document.getElementById("item-list").innerHTML = "";
 		subtotal = currency("0");
 		updateTotals();
@@ -347,19 +428,23 @@ button {
 		
 		var name = document.createElement('name');
 		name.style.width = "100%";
-		name.innerHTML = "<input class=\"misc-name-input\"/>";
+		name.innerHTML = "<input class=\"misc-name-input\" value=\"Misc. Side\"/>";
 		
 		entry.appendChild(name);
 		
 		var price = document.createElement('price');
-		price.innerHTML = "<input class=\"misc-price-input\" min=\"0\" oninput=\"\" onchange=\"\"/>";
+		price.innerHTML = "<input class=\"misc-price-input\" min=\"0\" value=\"2.99\" oninput=\"\" onchange=\"\"/>";
 		price.addEventListener('input', onChangeMisc);
+		price.oldvalue = '2.99';
 		
 		entry.appendChild(price);
 		
 		container.appendChild(entry);
 		
 		currId++;
+		
+		subtotal = subtotal.add('2.99');
+		updateTotals();
 	}
 	
 	function updateTotals()
@@ -374,6 +459,10 @@ button {
 		if(element.target.oldvalue != undefined)
 		{
 			subtotal = subtotal.subtract(element.target.oldvalue);
+		}
+		else if(element.target.oldvalue == undefined)
+		{
+			subtotal = subtotal.subtract('2.99');
 		}
 		
 		element.target.oldvalue = element.target.value;
@@ -418,6 +507,7 @@ button {
 		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	  }
 	  document.getElementById(tabName).style.display = "block";
-	  event.currentTarget.className += " active";
+	  if(event != undefined)
+		event.currentTarget.className += " active";
 	}
 </script>
