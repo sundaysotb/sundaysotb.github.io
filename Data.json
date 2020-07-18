@@ -2,31 +2,31 @@
   "Salads": [
     {
       "Name": "OTB Salad",
-      "Price": "9.99"
+      "Price": "10.99"
     },
     {
       "Name": "Caesar Salad",
-      "Price": "10.99"
+      "Price": "11.99"
     },
     {
-      "Name": "Caesar Salad (Chix)",
-      "Price": "13.99"
+      "Name": "Caesar Salad w/ Chicken",
+      "Price": "14.99"
     },
     {
-      "Name": "Caesar Salad (Shrimp)",
-      "Price": "15.99"
+      "Name": "Caesar Salad w/ Shrimp",
+      "Price": "16.99"
     },
     {
       "Name": "Antipasto Salad",
-      "Price": "12.99"
+      "Price": "14.99"
     },
     {
       "Name": "Cobb Salad",
-      "Price": "12.99"
+      "Price": "13.99"
     },
     {
       "Name": "Athens Salad",
-      "Price": "10.99"
+      "Price": "11.99"
     },
     {
       "Name": "Granada Salad",
@@ -54,73 +54,73 @@
     },
     {
       "Name": "Chicken Pesto (Salad)",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Chicken & Steak Combo (Spinach)",
       "Price": "10.99"
     },
     {
-      "Name": "Chicken & Shrimp Combo (Romaine)",
+      "Name": "Chicken & Steak Combo (Spinach)",
       "Price": "12.99"
     },
     {
+      "Name": "Chicken & Shrimp Combo (Romaine)",
+      "Price": "13.99"
+    },
+    {
       "Name": "Steak & Shrimp (Spring)",
-      "Price": "14.99"
+      "Price": "15.99"
     }
   ],
   "Sandwiches": [
 	{
       "Name": "Chicken Roma",
-      "Price": "10.99"
-    },
-    {
-      "Name": "Chicken Pesto",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Turkey & Swiss",
-      "Price": "9.99"
-    },
-    {
-      "Name": "RB & Cheddar",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Pepperoni",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Naples",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Caprese",
-      "Price": "10.99"
-    },
-    {
-      "Name": "Smoked Three Cheese",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Tuna & Asiago",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Croque Monsieur",
-      "Price": "10.99"
-    },
-    {
-      "Name": "Croque Madame",
       "Price": "12.99"
     },
     {
+      "Name": "Chicken Pesto",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Turkey & Swiss",
+      "Price": "10.99"
+    },
+    {
+      "Name": "RB & Cheddar",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Pepperoni",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Naples",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Caprese",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Smoked Three Cheese",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Tuna & Asiago",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Croque Monsieur",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Croque Madame",
+      "Price": "13.99"
+    },
+    {
       "Name": "Meatball Sandwich",
-      "Price": "9.99"
+      "Price": "10.99"
     },
     {
       "Name": "Italian Suasage Sandwich",
-      "Price": "10.99"
+      "Price": "11.99"
     },
     {
       "Name": "Pizza Sandwich",
@@ -128,35 +128,31 @@
     },
     {
       "Name": "Chicken Marinara",
-      "Price": "10.99"
+      "Price": "11.99"
     },
     {
       "Name": "Pastrami & Swiss",
-      "Price": "11.99"
+      "Price": "12.99"
     },
     {
       "Name": "RB & Bleu",
-      "Price": "11.99"
+      "Price": "12.99"
     },
     {
-      "Name": "Tri-Tip Steak",
+      "Name": "Tri Tip Steak",
       "Price": "13.99"
     },
     {
-      "Name": "Turkey | RB | Ham Sub",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Italian | Club | Tuna Sub",
-      "Price": "11.99"
+      "Name": "Turkey | RB | Ham | Italian | Club | Tuna Sub",
+      "Price": "10.99"
     },
     {
       "Name": "Antipasto",
-      "Price": "11.99"
+      "Price": "13.99"
     },
     {
       "Name": "Classic Chicken Salad",
-      "Price": "9.99"
+      "Price": "10.99"
     },
     {
       "Name": "Seafood Club",
@@ -164,35 +160,35 @@
     },
     {
       "Name": "Turkey & Swiss",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Toasted BLT",
-      "Price": "8.99"
-    },
-    {
-      "Name": "BLT W/ Avocado",
-      "Price": "9.99"
-    },
-    {
-      "Name": "Egg Salad Sandwich",
-      "Price": "8.99"
-    },
-    {
-      "Name": "OMG Chicken Salad",
       "Price": "10.99"
     },
     {
+      "Name": "Toasted BLT",
+      "Price": "9.99"
+    },
+    {
+      "Name": "BLT w/ Avocado",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Egg Salad Sandwich",
+      "Price": "9.99"
+    },
+    {
+      "Name": "OMG Chicken Salad",
+      "Price": "12.99"
+    },
+    {
       "Name": "Bang Bang",
-      "Price": "11.99"
+      "Price": "12.99"
     },
     {
       "Name": "The Best",
-      "Price": "12.99"
+      "Price": "13.99"
     },
     {
       "Name": "The Five Star",
-      "Price": "12.99"
+      "Price": "13.99"
     }
   ],
   "Crepes": [
@@ -201,12 +197,12 @@
       "Price": "15.99"
     },
     {
-      "Price": "13.99",
-      "Name": "Chicken Divan"
+      "Name": "Chicken Divan",
+      "Price": "14.99"
     },
     {
       "Name": "Croque Monsieur",
-      "Price": "13.99"
+      "Price": "14.99"
     },
     {
       "Name": "Wild Pacific Salmon",
@@ -214,27 +210,27 @@
     },
     {
       "Name": "Chorizo & Potatoes",
-      "Price": "12.99"
+      "Price": "13.99"
     },
     {
       "Name": "Grilled Steak & Peppers",
-      "Price": "14.99"
+      "Price": "15.99"
     },
     {
       "Name": "Veggie Crepe",
-      "Price": "13.99"
+      "Price": "14.99"
     },
     {
       "Name": "Homeboy Crepe",
-      "Price": "13.99"
+      "Price": "14.99"
     },
     {
       "Name": "Homegirl Crepe",
-      "Price": "13.99"
+      "Price": "14.99"
     },
     {
       "Name": "South Beach Crepe",
-      "Price": "13.99"
+      "Price": "14.99"
     },
     {
       "Name": "French Bourgeois Crepe",
@@ -254,7 +250,7 @@
     },
     {
       "Name": "Berry Good",
-      "Price": "9.99"
+      "Price": "10.99"
     },
     {
       "Name": "Tout De Suite",
@@ -262,15 +258,15 @@
     },
     {
       "Name": "Romeo & Juliet",
-      "Price": "10.99"
-    },
-    {
-      "Name": "Funky Monkey",
       "Price": "11.99"
     },
     {
+      "Name": "Funky Monkey",
+      "Price": "12.99"
+    },
+    {
       "Name": "Napoleon",
-      "Price": "8.99"
+      "Price": "9.99"
     },
     {
       "Name": "Chocolatier",
@@ -282,11 +278,11 @@
     },
     {
       "Name": "The Sweetheart",
-      "Price": "9.99"
+      "Price": "10.99"
     },
     {
       "Name": "Crepe Dimanche",
-      "Price": "10.99"
+      "Price": "12.99"
     },
     {
       "Name": "French Apple",
@@ -302,7 +298,7 @@
     },
     {
       "Name": "A La Mode",
-      "Price": "2.00"
+      "Price": "3.00"
     }
   ],
 	"Pasta": [
@@ -345,6 +341,456 @@
     {
       "Name": "Shrimp Scampi",
       "Price": "19.99"
+    }
+  ],
+	"Breakfast": [
+    {
+      "Name": "Breakfast Crepe",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Breakfast Sandwich",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Breakfast Croissant",
+      "Price": "12.99"
+    },
+    {
+      "Name": "South Beach Sandwich",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Monte Cristo Sandwich",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Nutty Cristo Sandwich",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Sun Toast",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Sunny Benny Toast",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Salmon Sun Toast",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Homme Pomme Frits",
+      "Price": "10.99"
+    },
+    {
+      "Name": "2 x 2 x 2",
+      "Price": "9.99"
+    },
+    {
+      "Name": "(Sub) French Toast",
+      "Price": "1.00"
+    },
+    {
+      "Name": "(Sub) Waffle",
+      "Price": "2.00"
+    },
+    {
+      "Name": "2 x 2 x 2 (Protein Style)",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Oatmeal Brulee",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Yogurt & Granola",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Eggs Benedict",
+      "Price": "14.99"
+    },
+    {
+      "Name": "California Benedict",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Salmon Benedict",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Seafood Benedict",
+      "Price": "16.99"
+    },
+    {
+      "Name": "Eggs Flourentine",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Bacon & Eggs",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Sausage & Eggs",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Ham Steak & Eggs",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Italian Sausage & Eggs",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Short Stack Pancakes",
+      "Price": "6.99"
+    },
+    {
+      "Name": "Full Stack Pancakes",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Oatmeal Banana Pancakes",
+      "Price": "8.99"
+    },
+    {
+      "Name": "2 Slices French Toast",
+      "Price": "6.99"
+    },
+    {
+      "Name": "3 Slices French Toast",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Stuffed French Toast",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Sticky Toast",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Short Stack Waffles",
+      "Price": "7.99"
+    },
+    {
+      "Name": "Full Stack Waffles",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Bacon Waffle",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Bacon Crazy",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Power Waffle",
+      "Price": "11.99"
+    }
+  ],
+	"Kids Menu": [
+    {
+      "Name": "Cheese Pizza",
+      "Price": "7.99"
+    },
+    {
+      "Name": "Chicken Tenders w/ French Fries",
+      "Price": "7.99"
+    },
+    {
+      "Name": "Kids Mac & Cheese",
+      "Price": "7.99"
+    },
+    {
+      "Name": "Kids Spaghetti & Meatballs",
+      "Price": "8.99"
+    },
+    {
+      "Name": "Turkey & Provalone Sandwich",
+      "Price": "7.50"
+    },
+    {
+      "Name": "PBJ | Grilled Cheese Sandwich",
+      "Price": "5.99"
+    }
+  ],
+	"Pizzas": [
+    {
+      "Name": "Cheese",
+      "Price": "9.99"
+    },
+    {
+      "Name": "Pepperoni | 1 Topping",
+      "Price": "10.99"
+    },
+    {
+      "Name": "Pepperoni & Sausage | 2 Topping",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Calebrese",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Three Cheese",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Veggie",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Meatball",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Chorizo, Peppers & Potatoes",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Margherita",
+      "Price": "14.99"
+    },
+    {
+      "Name": "Italian Job | 3 Topping",
+      "Price": "14.99"
+    },
+    {
+      "Name": "Bistro Special | 4 Topping",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Pastrami & Pickles",
+      "Price": "15.99"
+    },
+    {
+      "Name": "BBQ Chicken",
+      "Price": "15.99"
+    },
+    {
+      "Name": "Chicken & Broccoli",
+      "Price": "15.99"
+    },
+    {
+      "Name": "The Greek",
+      "Price": "16.99"
+    },
+    {
+      "Name": "Big Shrimper",
+      "Price": "17.99"
+    },
+    {
+      "Name": "Grilled Steak & Roasted Pepper",
+      "Price": "17.99"
+    }
+  ],
+  "Drinks": [
+    {
+      "Name": "Fountain Drink | Iced Tea",
+      "Price": "2.75"
+    },
+    {
+      "Name": "Herb Tea",
+      "Price": "3.25"
+    },
+    {
+      "Name": "Latte Tea",
+      "Price": "3.75"
+    },
+    {
+      "Name": "Matcha Green Tea Latte",
+      "Price": "4.85"
+    },
+    {
+      "Name": "Italian Cream Soda",
+      "Price": "4.25"
+    },
+    {
+      "Name": "Triple Hot Chocolate",
+      "Price": "3.95"
+    },
+    {
+      "Name": "Babyccino",
+      "Price": "2.25"
+    },
+    {
+      "Name": "Lg Milk",
+      "Price": "3.00"
+    },
+    {
+      "Name": "Sm Milk",
+      "Price": "1.85"
+    },
+    {
+      "Name": "Lg Juice",
+      "Price": "3.50"
+    },
+    {
+      "Name": "Coffee",
+      "Price": "3.00"
+    },
+    {
+      "Name": "Americano",
+      "Price": "3.25"
+    },
+    {
+      "Name": "Espresso (1 Shot)",
+      "Price": "1.95"
+    },
+    {
+      "Name": "Espresso (2 Shots)",
+      "Price": "2.65"
+    },
+    {
+      "Name": "Cappuccino",
+      "Price": "4.55"
+    },
+    {
+      "Name": "Latte",
+      "Price": "4.55"
+    },
+    {
+      "Name": "Flavored Latte",
+      "Price": "4.75"
+    },
+    {
+      "Name": "Macchiato",
+      "Price": "4.85"
+    },
+    {
+      "Name": "Flavor Macchiato",
+      "Price": "4.95"
+    },
+    {
+      "Name": "Golden Tea",
+      "Price": "4.75"
+    }
+  ],
+  "Smoothies": [
+    {
+      "Name": "Fruity Good Greens",
+      "Price": "4.75"
+    },
+    {
+      "Name": "Orange Banana Blast",
+      "Price": "4.50"
+    },
+    {
+      "Name": "Berry Bonanza",
+      "Price": "4.75"
+    },
+    {
+      "Name": "Minty Matcha",
+      "Price": "4.95"
+    },
+    {
+      "Name": "The C.P.B",
+      "Price": "4.95"
+    },
+    {
+      "Name": "Protein Boost",
+      "Price": "0.50"
+    },
+    {
+      "Name": "Matcha Boost",
+      "Price": "0.50"
+    },
+    {
+      "Name": "Turmeric Boost",
+      "Price": "0.50"
+    },
+    {
+      "Name": "Ginger Boost",
+      "Price": "0.50"
+    }
+  ],
+  "Sides": [
+    {
+      "Name": "Side FF",
+      "Price": "2.99"
+    },
+    {
+      "Name": "Side Sausage | Bacon",
+      "Price": "4.50"
+    },
+    {
+      "Name": "Add Cheese",
+      "Price": "1.00"
+    },
+    {
+      "Name": "Extra Egg",
+      "Price": "1.75"
+    },
+    {
+      "Name": "Side Fruit",
+      "Price": "2.99"
+    },
+    {
+      "Name": "Side Hashbrowns",
+      "Price": "2.99"
+    },
+    {
+      "Name": "Side Country Fried Potatoes",
+      "Price": "2.99"
+    },
+    {
+      "Name": "Side Cottage Cheese",
+      "Price": "2.99"
+    },
+    {
+      "Name": "Side House Salad",
+      "Price": "2.99"
+    }
+  ],
+  "Omelettes": [
+    {
+      "Name": "OTB Omelette",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Denver Omelette",
+      "Price": "12.99"
+    },
+    {
+      "Name": "California Omelette",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Veggie Omelette",
+      "Price": "12.99"
+    },
+    {
+      "Name": "Meat Lovers Omelette",
+      "Price": "13.99"
+    },
+    {
+      "Name": "Cheese Lovers Omelette",
+      "Price": "11.99"
+    },
+    {
+      "Name": "Pacific Salmon Omelette",
+      "Price": "14.99"
+    },
+    {
+      "Name": "Turkey Omelette",
+      "Price": "11.99"
+    },
+	{
+      "Name": "Egg Whites",
+      "Price": "2.00"
+    },
+	{
+      "Name": "Add Cheese",
+      "Price": "1.00"
+    },
+	{
+      "Name": "Add Avocado",
+      "Price": "2.00"
     }
   ]
 }
