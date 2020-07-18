@@ -352,7 +352,7 @@ button {
 		entry.appendChild(name);
 		
 		var price = document.createElement('price');
-		price.innerHTML = "<input class=\"misc-price-input\" min=\"0\" inputmode=\"numeric\" type=\"number\" oninput=\"\" onchange=\"\"/>";
+		price.innerHTML = "<input class=\"misc-price-input\" min=\"0\" type=\"number\" oninput=\"\" onchange=\"\"/>";
 		price.addEventListener('input', onChangeMisc);
 		
 		entry.appendChild(price);
