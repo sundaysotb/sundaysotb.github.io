@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="cookies.js"></script>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	</head>
+	<body>
+		<div style="height: 90%; width: 100%; display: flex;">
+			<div id="front-section" class="section" style="background-color: white;">
+				<div class="section-header">
+				Front
+				</div>
+			</div>
+			<div id="inside-section" class="section" style="background-color: white;">
+				<div class="section-header">
+				Inside
+				</div>
+			</div>
+			<div id="patio-section" class="section" style="background-color: white;">
+				<div class="section-header">
+				Patio
+				</div>
+			</div>
+		</div>
+		<div class="control-panel">
+			<button onclick="refresh()">Refresh Page</button>
+			<button onclick="deleteCookies()" style="margin-left: 80%;">Clear All Tables</button>
+		</div>
+	</body>
+</html>
+
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+*, *::after, *::before {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  touch-action: manipulation;
+}
+
+.section {
+  border: 1px solid #ededed;
+  width: 33.33333%;
+  height: 100%;
+}
+
+.front {
+  background-color: #b1f7a8;
+}
+
+.inside {
+  background-color: #a1b5f7;
+}
+
+.patio {
+  background-color: #f5d198;
+}
+
+.section-button {
+	height: 15%;
+	width: 50%;
+	font-size: 2em;
+	border-radius: 5%;
+	border: 1px solid black;
+}
+
+.section-header {
+  padding-top: 2%;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  background-color: #ededed;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.control-panel {
+  height: 20%;
+  background-color: black;
+}
+</style>
+
+<script>
+
+	var tables = [['1', '2', '3', '4', '1A', '2A', '3A', '4A'],
+		['5', '6', '7', '8', '9', '5A', '6A', '7A', '8A', '9A'], 
+		['10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']];
+	var sectionHighlightColors = ['#cdffc7', '#c7d4ff', '#f5d9ab']
+	window.addEventListener('load', (event) => {
+		var sectionNames = ['front', 'inside', 'patio'];
+		
+		var i = 0;
+		for(section in tables)
+		{
+			var currSection = tables[section];
+			for(i = 0; i < currSection.length; i += 2)
+			{
+				var parent = document.createElement('div');
+				parent.style.display = 'flex';
+				parent.style.width = '100%';
+				
+				for(var k = 0; k < 2; k++)
+				{
+					var button = document.createElement('button');
+					button.className = 'section-button ' + sectionNames[section];
+					button.id = currSection[i + k];
+					
+					var tableNum = document.createElement('div');
+					tableNum.style.fontSize = "1em";
+					tableNum.innerHTML = currSection[i + k];
+					
+					var checkAmount = document.createElement('div');
+					checkAmount.style.fontSize = ".5em";
+					checkAmount.innerHTML = "$0.00";
+					checkAmount.id = button.id + "-total";
+					
+					button.appendChild(tableNum);
+					button.appendChild(checkAmount);
+					
+					button.addEventListener("click", openTable);
+					
+					parent.appendChild(button);
+				}
+				
+				document.getElementById(sectionNames[section] + "-section").appendChild(parent);
+			}
+		}
+		
+		loadTableTotals();
+	});
+	
+	function deleteCookies()
+	{
+		deleteAllCookies();
+		refresh();
+	}
+	
+	function loadTableTotals()
+	{
+		for(sectionNum in tables)
+		{
+			for(tableNum in tables[sectionNum])
+			{
+				var currId = tables[sectionNum][tableNum];
+				var value = getCookie(tables[sectionNum][tableNum]);
+				
+				if(value != undefined)
+				{
+					var total = value.split(",")[0];
+					document.getElementById(currId + "-total").innerHTML = "$" + total;
+					
+					if(total != '0.00')
+					{
+						document.getElementById(currId).style.backgroundColor = sectionHighlightColors[sectionNum];
+					}
+				}
+			}
+		}
+	}
+	
+	var openTable = function()
+	{
+		window.location.replace("/index.html?table=" + this.id);	
+	}
+	
+	function refresh()
+	{
+		location.reload();
+	}
+</script>

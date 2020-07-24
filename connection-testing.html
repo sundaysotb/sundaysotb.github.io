@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+	Connection Testing
+	</body>
+</html>
+
+<script>
+const socket = new WebSocket('ws://192.168.1.11:8194');
+
+socket.addEventListener('open', function (event) {
+	var message = 'ABasdjkhafsdjjfjkashjkfhweqjkrhwejhjrqwehkrABasdjkhafsdjjfjkashjkfhweqjkrhwejhjrqwehkrABasdjkhafsdjjfjkashjkfhweqjkrhwejhjrqwehkrABasdjkhafsdjjfjkashjkfhweqjkrhwejhjrqwehkrABasdjkhafsdjjfjkashjkfhweqjkrhwejhjrqwehkr!';
+    socket.send(message);
+	console.log(message.length);
+});
+</script>

@@ -9,11 +9,11 @@
       "Price": "11.99"
     },
     {
-      "Name": "Caesar Salad w/ Chicken",
+      "Name": "Caesar Salad (Chix)",
       "Price": "14.99"
     },
     {
-      "Name": "Caesar Salad w/ Shrimp",
+      "Name": "Caesar Sal. (Shrimp)",
       "Price": "16.99"
     },
     {
@@ -37,7 +37,7 @@
       "Price": "11.99"
     },
     {
-      "Name": "Chicken Salad (Spring)",
+      "Name": "Chix Salad (Spring)",
       "Price": "10.99"
     },
     {
@@ -53,19 +53,19 @@
       "Price": "9.99"
     },
     {
-      "Name": "Chicken Pesto (Salad)",
+      "Name": "Chix Pesto (Salad)",
       "Price": "10.99"
     },
     {
-      "Name": "Chicken & Steak Combo (Spinach)",
+      "Name": "Chix & Steak Salad",
       "Price": "12.99"
     },
     {
-      "Name": "Chicken & Shrimp Combo (Romaine)",
+      "Name": "Chix & Shrimp Salad",
       "Price": "13.99"
     },
     {
-      "Name": "Steak & Shrimp (Spring)",
+      "Name": "Steak & Shrimp Sal.",
       "Price": "15.99"
     }
   ],
@@ -119,7 +119,7 @@
       "Price": "10.99"
     },
     {
-      "Name": "Italian Suasage Sandwich",
+      "Name": "Italian Sausage",
       "Price": "11.99"
     },
     {
@@ -143,7 +143,7 @@
       "Price": "13.99"
     },
     {
-      "Name": "Turkey | RB | Ham | Italian | Club | Tuna Sub",
+      "Name": "Sub Sandwich",
       "Price": "10.99"
     },
     {
@@ -151,7 +151,7 @@
       "Price": "13.99"
     },
     {
-      "Name": "Classic Chicken Salad",
+      "Name": "Classic Chix Salad",
       "Price": "10.99"
     },
     {
@@ -193,7 +193,7 @@
   ],
   "Crepes": [
     {
-      "Name": "Seafood Combination",
+      "Name": "Seafood Combo",
       "Price": "15.99"
     },
     {
@@ -205,7 +205,7 @@
       "Price": "14.99"
     },
     {
-      "Name": "Wild Pacific Salmon",
+      "Name": "Pac. Salmon Crepe",
       "Price": "15.99"
     },
     {
@@ -213,7 +213,7 @@
       "Price": "13.99"
     },
     {
-      "Name": "Grilled Steak & Peppers",
+      "Name": "Steak & Pepp. Crepe",
       "Price": "15.99"
     },
     {
@@ -233,19 +233,19 @@
       "Price": "14.99"
     },
     {
-      "Name": "French Bourgeois Crepe",
+      "Name": "French Bourgeois",
       "Price": "15.99"
     },
     {
-      "Name": "Russian Bourgeois Crepe",
+      "Name": "Russian Bourgeois",
       "Price": "15.99"
     },
     {
-      "Name": "Italian Bourgeois Crepe",
+      "Name": "Italian Bourgeois",
       "Price": "15.99"
     },
     {
-      "Name": "Spanish Bourgeois Crepe",
+      "Name": "Spanish Bourgeois",
       "Price": "15.99"
     },
     {
@@ -323,11 +323,11 @@
       "Price": "15.99"
     },
     {
-      "Name": "Fettuccini Alfredo (Chix + Broc)",
+      "Name": "Fett. (Chix + Broc)",
       "Price": "20.99"
     },
     {
-      "Name": "Fettuccini Alfredo (Ham + Mushroom)",
+      "Name": "Fett. (Ham + Mush.)",
       "Price": "20.99"
     },
     {
@@ -357,15 +357,15 @@
       "Price": "12.99"
     },
     {
-      "Name": "South Beach Sandwich",
+      "Name": "South Beach Sammy",
       "Price": "13.99"
     },
     {
-      "Name": "Monte Cristo Sandwich",
+      "Name": "Monte Cristo",
       "Price": "13.99"
     },
     {
-      "Name": "Nutty Cristo Sandwich",
+      "Name": "Nutty Cristo",
       "Price": "13.99"
     },
     {
@@ -397,8 +397,8 @@
       "Price": "2.00"
     },
     {
-      "Name": "2 x 2 x 2 (Protein Style)",
-      "Price": "11.99"
+      "Name": "(Sub) Protein Style",
+      "Price": "2.00"
     },
     {
       "Name": "Oatmeal Brulee",
@@ -441,31 +441,31 @@
       "Price": "12.99"
     },
     {
-      "Name": "Italian Sausage & Eggs",
+      "Name": "Ital. Saus. & Eggs",
       "Price": "12.99"
     },
     {
-      "Name": "Short Stack Pancakes",
+      "Name": "2 Pancakes",
       "Price": "6.99"
     },
     {
-      "Name": "Full Stack Pancakes",
+      "Name": "4 Pancakes",
       "Price": "8.99"
     },
     {
-      "Name": "Oatmeal Banana Pancakes",
+      "Name": "2 Oatmeal Banana",
       "Price": "8.99"
     },
     {
-      "Name": "2 Slices French Toast",
+      "Name": "2 French Toast",
       "Price": "6.99"
     },
     {
-      "Name": "3 Slices French Toast",
+      "Name": "3 French Toast",
       "Price": "8.99"
     },
     {
-      "Name": "Stuffed French Toast",
+      "Name": "Stuffed FT",
       "Price": "10.99"
     },
     {
@@ -473,11 +473,11 @@
       "Price": "10.99"
     },
     {
-      "Name": "Short Stack Waffles",
+      "Name": "1 Waffle",
       "Price": "7.99"
     },
     {
-      "Name": "Full Stack Waffles",
+      "Name": "2 Waffles",
       "Price": "11.99"
     },
     {
@@ -499,7 +499,7 @@
       "Price": "7.99"
     },
     {
-      "Name": "Chicken Tenders w/ French Fries",
+      "Name": "Chicken Tenders",
       "Price": "7.99"
     },
     {
@@ -507,15 +507,19 @@
       "Price": "7.99"
     },
     {
-      "Name": "Kids Spaghetti & Meatballs",
+      "Name": "Kids Spaghetti",
       "Price": "8.99"
     },
     {
-      "Name": "Turkey & Provalone Sandwich",
+      "Name": "Turkey & Prov.",
       "Price": "7.50"
     },
     {
-      "Name": "PBJ | Grilled Cheese Sandwich",
+      "Name": "PB&J",
+      "Price": "5.99"
+    },
+	{
+      "Name": "Grilled Cheese",
       "Price": "5.99"
     }
   ],
@@ -525,11 +529,11 @@
       "Price": "9.99"
     },
     {
-      "Name": "Pepperoni | 1 Topping",
+      "Name": "1 Topping Pizza",
       "Price": "10.99"
     },
     {
-      "Name": "Pepperoni & Sausage | 2 Topping",
+      "Name": "2 Topping Pizza",
       "Price": "11.99"
     },
     {
@@ -549,7 +553,7 @@
       "Price": "13.99"
     },
     {
-      "Name": "Chorizo, Peppers & Potatoes",
+      "Name": "Chorizo Pizza",
       "Price": "13.99"
     },
     {
@@ -557,11 +561,11 @@
       "Price": "14.99"
     },
     {
-      "Name": "Italian Job | 3 Topping",
+      "Name": "3 Topping Pizza",
       "Price": "14.99"
     },
     {
-      "Name": "Bistro Special | 4 Topping",
+      "Name": "4 Topping Pizza",
       "Price": "15.99"
     },
     {
@@ -585,13 +589,17 @@
       "Price": "17.99"
     },
     {
-      "Name": "Grilled Steak & Roasted Pepper",
+      "Name": "Grilled Steak Pizza",
       "Price": "17.99"
     }
   ],
   "Drinks": [
     {
-      "Name": "Fountain Drink | Iced Tea",
+      "Name": "Fountain Drink",
+      "Price": "2.75"
+    },
+	{
+      "Name": "Iced Tea",
       "Price": "2.75"
     },
     {
@@ -715,7 +723,7 @@
       "Price": "2.99"
     },
     {
-      "Name": "Side Sausage | Bacon",
+      "Name": "Side Sausage/Bacon",
       "Price": "4.50"
     },
     {
@@ -735,7 +743,7 @@
       "Price": "2.99"
     },
     {
-      "Name": "Side Country Fried Potatoes",
+      "Name": "Side CP",
       "Price": "2.99"
     },
     {
@@ -765,15 +773,15 @@
       "Price": "12.99"
     },
     {
-      "Name": "Meat Lovers Omelette",
+      "Name": "Meat Lovers",
       "Price": "13.99"
     },
     {
-      "Name": "Cheese Lovers Omelette",
+      "Name": "Cheese Lovers",
       "Price": "11.99"
     },
     {
-      "Name": "Pacific Salmon Omelette",
+      "Name": "Pacific Salmon",
       "Price": "14.99"
     },
     {
